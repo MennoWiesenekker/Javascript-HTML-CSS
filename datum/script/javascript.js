@@ -1,0 +1,11 @@
+var date = new Date();
+var nlmaanden= new Array("Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December");
+var nldag= new Array("Zondag", "Maandag", "dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+var frmaanden= new Array("Jannewaris", "Febrewaris", "Maart", "April", "Maaie", "Juny", "July", "Augustus", "Septimber", "Oktober", "Novimber", "Desimber");
+var frdag= new Array("Snein", "Moandei", "Tiisdei", "Woansdei", "Tongersdei", "Freed", "Sneon");
+var dumaanden= new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+var dudag= new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+document.write("<p>Vandaag is het: " +date +"</p>");
+document.write("<p>Nederlands: "+ nldag[date.getDay()] + " " + date.getDate() + " " + nlmaanden[date.getMonth()] + " " + date.getFullYear()+ "</p>");
+document.write("<p>Frysk: "+ frdag[date.getDay()] + " " + date.getDate() + " " + frmaanden[date.getMonth()] + " " + date.getFullYear()+ "</p>");
+document.write("<p>Deutsch: "+ dudag[date.getDay()] + " " + date.getDate() + " " + dumaanden[date.getMonth()] + " " + date.getFullYear()+ "</p>");
